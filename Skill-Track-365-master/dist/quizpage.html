@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Track 365 - Quiz</title>
+    <style>
+        /* Your existing CSS styles here */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);;
+        }
+
+        .quiz-container h2 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            margin-top: 10px;
+        }
+
+        .option {
+            margin-bottom: 10px;
+        }
+
+        .submit-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h2>Course Recommendation Quiz - Unlock Your Learning Journey!</h2>
+    <p>Welcome to our Course Recommendation Quiz!</p>
+    <p>A personalized guide to tailor your learning experience! This quiz is designed to understand your unique preferences, goals, and commitment to learning.</p>
+    <p>Based on your responses, we'll recommend suitable tracks within each domain, catering to beginners, learners, and advanced individuals.</p>
+
+    <div class="question">
+        <p>1. What is your preferred learning style?</p>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="q1" value="visual"> Visual
+            </div>
+            <div class="option">
+                <input type="radio" name="q1" value="auditory"> Auditory
+            </div>
+            <div class="option">
+                <input type="radio" name="q1" value="kinesthetic"> Kinesthetic
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>2. How much time can you dedicate to learning per week?</p>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="q2" value="1-5"> 1-5 hours
+            </div>
+            <div class="option">
+                <input type="radio" name="q2" value="6-10"> 6-10 hours
+            </div>
+            <div class="option">
+                <input type="radio" name="q2" value="11+"> 11+ hours
+            </div>
+        </div>
+    </div>
+
+
+ <div class="question">
+        <p>3. What is your main goal of joining this online platform?</p>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="q3" value="career-advancement"> Career Advancement
+            </div>
+            <div class="option">
+                <input type="radio" name="q3" value="personal-enrichment"> Personal Enrichment
+            </div>
+            <div class="option">
+                <input type="radio" name="q3" value="skill-developement"> Skill Development
+            </div>
+        </div>
+    </div>
+    <!-- Add more questions and options as needed -->
+
+    <button class="submit-button" onclick="submitQuiz()">Submit</button>
+</div>
+
+<script>
+    function submitQuiz() {
+        //alert("Quiz submitted! Redirecting to course recommendations...");
+        window.location.href = "quizpage2.html";
+    }
+</script>
+
+</body>
+</html>

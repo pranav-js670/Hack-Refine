@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Track 365 - Dashboard</title>
+    <style>
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dashboard-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard-container h2 {
+            color: #333;
+        }
+
+        .courses-section,
+        .progress-section,
+        .recommended-section {
+            margin-bottom: 20px;
+        }
+
+        .course-card {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .track-card {
+            background-color: #e1f5fe;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .track-card h3 {
+            color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard-container">
+    <h2>Welcome to the Learner's Dashboard!</h2>
+    <p>Get all the information about your learning journey in a glance.</p>
+    <p>Learn about recommended courses, course progress and so on.</p>
+    <div class="recommended-section">
+    <h3>Recommended Tracks</h3>
+    <p>These are the best suited courses for you!</p>
+    <div class="track-card">
+        <h3><strong>Web Development Fundamentals for Beginners</strong></h3>
+        <p>This course is tailored for absolute beginners with little to no prior knowledge of web development. Explore the essentials of HTML, CSS, and JavaScript, and learn how to build and deploy your first simple websites.</p>
+    </div>
+    <div class="track-card">
+        <h3>Web Development: Building Dynamic Websites</h3>
+        <p>Perfect for individuals who have a foundational understanding of web development. Dive deeper into front-end frameworks like React or Angular, explore back-end technologies like Node.js or Django, and learn to build dynamic, interactive websites with real-world functionalities. This course assumes basic knowledge and guides you to the next level in web development.
+
+        </p>
+    </div>
+    
+    <div class="courses-section">
+        <h3>Enrolled Courses</h3>
+        <div class="course-card">Course 1</div>
+        <div class="course-card">Course 2</div>
+        <!-- Add more course cards as needed -->
+    </div>
+
+    <div class="progress-section">
+        <h3>Progress Tracking</h3>
+        <p>Course 1 - 50% completed</p>
+        <p>Course 2 - 20% completed</p>
+        <!-- Add more progress tracking information as needed -->
+    </div>
+    <div>
+        <!--<button type="submit" style="color: green;"><a href="webdev.html">ENROLL NOW</a>-->
+            <div style="text-align: center;">
+                <button type="submit" style="color: green; padding: 10px 20px; background-color: #fff; border: 2px solid green;" onclick="enrollNow()">
+                    START YOUR FIRST COURSE NOW!
+                </button>
+            </div>
+        
+    </div>
+    </div>
+    <script>
+        function enrollNow() {
+            // Redirect to webdev.html
+            window.location.href = "webdev.html";
+        }
+    </script>
+
+</body>
+</html>
